@@ -137,7 +137,7 @@ Complex Complex::conjugate() const
 	return Complex(this->r,-this->i);
 }
 
-float Complex::modulus() const
+float Complex::module() const
 {
 	return sqrt(this->r * this->r + this->i * this->i);
 }
