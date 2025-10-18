@@ -172,5 +172,15 @@ void equationsolver(float a, float b, float c)
 		x2.display();
 	}
 }
-	
+	bool operator==(float x)const
+{
+   if(this->i!=0)
+   {
+    cout<<"comparaison n'est pas valid"<<endl;
+    return false;
+   }
+   else if (this->i==0 && this->r==x)
+	return true;
+   return false;
+}
 
