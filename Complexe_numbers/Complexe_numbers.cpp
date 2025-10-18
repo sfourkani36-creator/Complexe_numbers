@@ -13,9 +13,10 @@ int main()
 	z1[0].polar();
 	z1[1].trigoneometric();
 	delete[] z1;
+	cout<<boolalpha;
 	cout<<(z3 == z2)<<endl;
-	cout<<(z3 > z2)endl;
 	cout<<(z3 > z2)<<endl;
+	cout<<(z3 < z2)<<endl;
 	cout<<(z3 < 3)<<endl;
 	cout<<(z2 > -5)<<endl;
 	cout<<(z2==8)<<endl;
