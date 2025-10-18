@@ -30,7 +30,7 @@ Complex Complex::operator/(const Complex& c) const
 		return Complex(0, 0);
 	}
 	float denom = c.r * c.r + c.i* c.i;
-	return Complex((this->r * c.r + this->i * c.i) / denom,(this->i * c.r - this->r * c.i / denom));
+	return Complex((this->r * c.r + this->i * c.i) / denom,(this->i * c.r - this->r * c.i) / denom));
 }
 
 bool Complex::operator<(const Complex& z) const
@@ -42,7 +42,7 @@ bool Complex::operator<(const Complex& z) const
 	}
 	else {
 		cout << "La comparaison n'est pas defini pour les complexe" << endl;
-		return NULL;
+		return false;
 	}
 }
 
@@ -55,7 +55,7 @@ bool Complex::operator>(const Complex& z) const
 	}
 	else {
 		cout << "La comparaison n'est pas defini pour les complexe" << endl;
-		return NULL;
+		return false;
 	}
 }
 
@@ -92,7 +92,7 @@ bool Complex::operator>(float x) const
 	}
 	else {
 		cout<<"La comparaison n'est pas defini entre un complexe et un nombre"<<endl;
-		return NULL;
+		return false;
 	}
 }
 
@@ -105,7 +105,7 @@ bool Complex::operator<(float x) const
 	}
 	else {
 		cout << "La comparaison n'est pas defini entre un complexe et un nombre" << endl;
-		return NULL;
+		return false;
 	}
 }
 
