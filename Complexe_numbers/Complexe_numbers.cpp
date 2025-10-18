@@ -13,11 +13,12 @@ int main()
 	z1[0].polar();
 	z1[1].trigoneometric();
 	delete[] z1;
-	z3 == z2;
-	z3 > z2;
-	z3 < z2;
-	z3 < 3;
-	z2 > -5;
+	cout<<(z3 == z2)<<endl;
+	cout<<(z3 > z2)endl;
+	cout<<(z3 > z2)<<endl;
+	cout<<(z3 < 3)<<endl;
+	cout<<(z2 > -5)<<endl;
+	cout<<(z2==8)<<endl;
 	Complex z4 = z3 * z2;
 	z4.display();
 	Complex z5 = z2 * 2;
