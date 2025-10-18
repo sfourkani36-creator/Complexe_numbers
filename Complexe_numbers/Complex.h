@@ -27,7 +27,7 @@ class Complex
 		void display() const;
 		void polar() const;
 		Complex conjugate() const;
-		float modulus() const;
+		float module() const;
 		void trigoneometric() const;
 };
 void equationsolver(float, float, float);//j'ai declare la fonction ici pour faciliter son utilisation dans le main pour ne pas avoir creer un autre variable 
