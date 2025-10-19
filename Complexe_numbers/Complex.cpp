@@ -172,7 +172,7 @@ void equationsolver(float a, float b, float c)
 		x2.display();
 	}
 }
-	bool operator==(float x)const
+	bool Complex::operator==(float x)const
 {
    if(this->i!=0)
    {
