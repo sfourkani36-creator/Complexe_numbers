@@ -126,7 +126,7 @@ void Complex::display() const
 
 void Complex::polar() const
 {
-	float module = this->modulus();
+	float module = this->module();
 	float angle = atan2(this->i, this->r);
 	cout << "forme polaire (exponentielle) : "<<module << "e^(i" << angle << ")" << endl;
 	
@@ -144,7 +144,7 @@ float Complex::module() const
 
 void Complex::trigoneometric() const
 {
-	float module = this->modulus();
+	float module = this->module();
 	float angle = atan2(this->i, this->r);
 	cout <<"forme trigonometrique : "<< module << "(cos(" << angle << ") + i sin(" << angle << "))" << endl;
 }
